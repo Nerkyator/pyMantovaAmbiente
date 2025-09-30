@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mantova Ambiente - Zone Selection",
+        "description": "Select your waste collection zone.",
+        "data": {
+          "zone": "Zone"
+        }
+      },
+      "waste_types": {
+        "title": "Mantova Ambiente - Waste Types",
+        "description": "Select the waste types you want to track for zone **{zone_title}**.\n\nYou can also configure the data cache duration.",
+        "data": {
+          "waste_6256": "Clothes",
+          "waste_3705": "Diapers and adult diapers", 
+          "waste_3581": "Paper",
+          "waste_3701": "Unsorted waste",
+          "waste_3704": "Organic",
+          "waste_3707": "Plastic",
+          "waste_3708": "Garden waste",
+          "waste_3710": "Glass",
+          "waste_3702": "Bulky waste",
+          "cache_hours": "Cache Duration (hours)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Mantova Ambiente API. Please check your internet connection.",
+      "no_waste_types_selected": "You must select at least one waste type to track.",
+      "unknown": "Unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This zone is already configured.",
+      "no_zones": "No zones available from API."
+    }
+  }
+}

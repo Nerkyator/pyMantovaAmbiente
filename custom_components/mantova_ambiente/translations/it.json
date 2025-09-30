@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mantova Ambiente - Selezione Zona",
+        "description": "Seleziona la tua zona di raccolta rifiuti.",
+        "data": {
+          "zone": "Zona"
+        }
+      },
+      "waste_types": {
+        "title": "Mantova Ambiente - Tipologie Rifiuti",
+        "description": "Seleziona le tipologie di rifiuti che vuoi tracciare per la zona **{zone_title}**.\n\nPuoi anche configurare la durata della cache dei dati.",
+        "data": {
+          "waste_6256": "Abiti",
+          "waste_3705": "Pannolini e pannoloni", 
+          "waste_3581": "Carta",
+          "waste_3701": "Indifferenziato",
+          "waste_3704": "Organico",
+          "waste_3707": "Plastica",
+          "waste_3708": "Sfalci",
+          "waste_3710": "Vetro",
+          "waste_3702": "Ingombranti",
+          "cache_hours": "Durata Cache (ore)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi all'API di Mantova Ambiente. Controlla la tua connessione internet.",
+      "no_waste_types_selected": "Devi selezionare almeno una tipologia di rifiuto da tracciare.",
+      "unknown": "Errore inaspettato."
+    },
+    "abort": {
+      "already_configured": "Questa zona è già configurata.",
+      "no_zones": "Nessuna zona disponibile dall'API."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "domain": "mantova_ambiente",
+  "name": "Mantova Ambiente",
+  "version": "1.0.0",
+  "documentation": "https://github.com/Nerkyator/pyMantovaAmbiente",
+  "issue_tracker": "https://github.com/Nerkyator/pyMantovaAmbiente/issues",
+  "codeowners": ["@Nerkyator"],
+  "config_flow": true,
+  "dependencies": [],
+  "requirements": ["aiohttp>=3.8.0"],
+  "iot_class": "cloud_polling",
+  "integration_type": "service"
+}
