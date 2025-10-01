@@ -5,6 +5,7 @@ import logging
 from datetime import datetime
 from typing import Any
 
+from homeassistant.components.binary_sensor import BinarySensorEntity
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
@@ -152,7 +153,7 @@ class TomorrowWasteSensor(MantovaAmbienteEntity, SensorEntity):
         return attrs
 
 
-class WasteTypeSensor(MantovaAmbienteEntity, SensorEntity):
+class WasteTypeSensor(MantovaAmbienteEntity, BinarySensorEntity):
     """Sensor for individual waste type."""
     
     def __init__(
@@ -172,7 +173,7 @@ class WasteTypeSensor(MantovaAmbienteEntity, SensorEntity):
         self._attr_icon = "mdi:recycle"
     
     @property
-    def native_value(self) -> bool:
+    def is_on(self) -> bool:
         """Return True if this waste type is collected tomorrow."""
         if not self.coordinator.data:
             return False
